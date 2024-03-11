@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 50px;
+      height: 60px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+      background-color: aliceblue;
+      position: sticky;
+      top: 0;
+    }
+    .navigations {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .btnDiv button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: aliceblue;
+    }
+    .menu {
+      border: none;
+      background-color: burlywood;
+      color: aliceblue;
+      display: none;
+    }
+    .btnDiv {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .btnDiv button{
+      background-color: burlywood;
+      color: aliceblue;
+    }
+    .smallNav {
+      width: 100%;
+      height: 60vh;
+      background-color: rgb(97, 31, 31);
+      color: white;
+      position: absolute;
+      left: 0;
+      top: -70vh;
+      transition: all linear 1s;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+    }
+    .parent{
+      display: none;
+    }
+    .smlnavigations {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      padding-left: 30px;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .smlnavigations p {
+      text-align: start;
+    }
+    .smlbtnDiv {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .smlbtnDiv button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: aliceblue;
+    }
+    .parent:focus-within .smallNav {
+      position: absolute;
+      top: 0;
+    }
+    .navigations p{
+     cursor: pointer;
+    }
+
+    .cardParent{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 30px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 250px;
+      height: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+      background-color: white;
+      padding: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .parent{
+        display: block;
+      }
+      .navigations {
+        display: none;
+      }
+    }
+    @media (max-width: 450px) {
+      .btnDiv {
+        display: none;
+      }
+      .menu {
+        display: block;
+      }
+      .card{
+        width: 100%;
+        height: fit-content;
+      }
+    }
+      /* .cardOne{
+        background-color: red!important;
+        color: white;
+      } */
+  </style>
+  <body>
+    <nav>
+      <h1>Blog</h1>
+      <div class="navigations">
+        <p>Home</p>
+        <p>About</p>
+        <p>Contact</p>
+        <p>Services</p>
+        <p>Features</p>
+      </div>
+
+      <div class="btnDiv">
+        <button>Sign Up</button>
+        <button>Log In</button>
+      </div>
+
+      <div class="parent">
+        <button class="menu">
+          <span class="material-symbols-outlined"> menu </span>
+        </button>
+
+        <div class="smallNav">
+          <div class="header">
+            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Blog</h1>
+            <button class="menu">
+              <span class="material-symbols-outlined"> cancel </span>
+            </button>
+          </div>
+          <div class="smlnavigations">
+            <p>Home</p>
+            <p>About</p>
+            <p>Contact</p>
+            <p>Services</p>
+            <p>Features</p>
+          </div>
+
+          <div class="smlbtnDiv">
+            <button>Sign Up</button>
+            <button>Log In</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="cardParent">
+        <div class="card cardOne">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni,
+          laboriosam? Reiciendis suscipit temporibus aut molestias error vero
+          nam qui omnis debitis labore, doloribus laudantium ratione voluptatum
+          excepturi quod voluptatem optio? Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Magni, laboriosam? Reiciendis suscipit
+          temporibus aut molestias error vero nam qui omnis debitis labore,
+          doloribus laudantium ratione voluptatum excepturi quod voluptatem
+          optio?
+        </div>
+        <div class="card">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni,
+          laboriosam? Reiciendis suscipit temporibus aut molestias error vero
+          nam qui omnis debitis labore, doloribus laudantium ratione voluptatum
+          excepturi quod voluptatem optio? Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Magni, laboriosam? Reiciendis suscipit
+          temporibus aut molestias error vero nam qui omnis debitis labore,
+          doloribus laudantium ratione voluptatum excepturi quod voluptatem
+          optio?
+        </div>
+        <div class="card">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni,
+          laboriosam? Reiciendis suscipit temporibus aut molestias error vero
+          nam qui omnis debitis labore, doloribus laudantium ratione voluptatum
+          excepturi quod voluptatem optio? Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Magni, laboriosam? Reiciendis suscipit
+          temporibus aut molestias error vero nam qui omnis debitis labore,
+          doloribus laudantium ratione voluptatum excepturi quod voluptatem
+          optio?
+        </div>
+        <div class="card">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni,
+          laboriosam? Reiciendis suscipit temporibus aut molestias error vero
+          nam qui omnis debitis labore, doloribus laudantium ratione voluptatum
+          excepturi quod voluptatem optio? Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Magni, laboriosam? Reiciendis suscipit
+          temporibus aut molestias error vero nam qui omnis debitis labore,
+          doloribus laudantium ratione voluptatum excepturi quod voluptatem
+          optio?
+        </div>
+        <div class="card">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni,
+          laboriosam? Reiciendis suscipit temporibus aut molestias error vero
+          nam qui omnis debitis labore, doloribus laudantium ratione voluptatum
+          excepturi quod voluptatem optio? Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Magni, laboriosam? Reiciendis suscipit
+          temporibus aut molestias error vero nam qui omnis debitis labore,
+          doloribus laudantium ratione voluptatum excepturi quod voluptatem
+          optio?
+        </div>
+        <div class="card">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni,
+          laboriosam? Reiciendis suscipit temporibus aut molestias error vero
+          nam qui omnis debitis labore, doloribus laudantium ratione voluptatum
+          excepturi quod voluptatem optio? Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Magni, laboriosam? Reiciendis suscipit
+          temporibus aut molestias error vero nam qui omnis debitis labore,
+          doloribus laudantium ratione voluptatum excepturi quod voluptatem
+          optio?
+        </div>
+        <div class="card">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni,
+          laboriosam? Reiciendis suscipit temporibus aut molestias error vero
+          nam qui omnis debitis labore, doloribus laudantium ratione voluptatum
+          excepturi quod voluptatem optio? Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Magni, laboriosam? Reiciendis suscipit
+          temporibus aut molestias error vero nam qui omnis debitis labore,
+          doloribus laudantium ratione voluptatum excepturi quod voluptatem
+          optio?
+        </div>
+        <div class="card">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni,
+          laboriosam? Reiciendis suscipit temporibus aut molestias error vero
+          nam qui omnis debitis labore, doloribus laudantium ratione voluptatum
+          excepturi quod voluptatem optio? Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Magni, laboriosam? Reiciendis suscipit
+          temporibus aut molestias error vero nam qui omnis debitis labore,
+          doloribus laudantium ratione voluptatum excepturi quod voluptatem
+          optio?
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
