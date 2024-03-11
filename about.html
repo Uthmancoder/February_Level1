@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .background {
+      width: 100%;
+      height: 100vh;
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFI8obJobkGuWen9dguTmXxVxTVllfXbTHWwaf_W_hkPEmnCmobPYU8v3YptUgpz5ocX4&usqp=CAU);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      float: inline-end;
+      gap: 30px;
+      color: white;
+      padding: 30px;
+    }
+    a {
+      color: white;
+    }
+    .img {
+      border-radius: 100%;
+    }
+    .btttn {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      background-color: rgba(225, 225, 225, 0.3);
+      opacity: 50;
+      border: none;
+      outline: none;
+      font-size: 30px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .parent {
+      position: relative;
+    }
+    .secondChild {
+      width: 400px;
+      height: 500px;
+      background-color: black;
+      box-shadow:
+        0,
+        0,
+        5px 5px gray;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      overflow-y: scroll;
+      position: absolute;
+      right: 0;
+      display: none;
+    }
+    .content1 {
+      width: 100px;
+      height: 100px;
+      background-color: aliceblue;
+      border-radius: 10px;
+    }
+    .content2 {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(66, 148, 220);
+      border-radius: 10px;
+    }
+    .content3 {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(162, 211, 254);
+      border-radius: 10px;
+    }
+    .content4 {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(201, 182, 74);
+      border-radius: 10px;
+    }
+    .content5 {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(201, 182, 74);
+      border-radius: 10px;
+    }
+    .content6 {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(228, 158, 7);
+      border-radius: 10px;
+    }
+    .content7 {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(211, 34, 27);
+      border-radius: 10px;
+    }
+    .content8 {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(43, 157, 198);
+      border-radius: 10px;
+    }
+    .content9 {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(227, 41, 211);
+      border-radius: 10px;
+    }
+    .secondChild::-webkit-scrollbar {
+      width: 12px;
+    }
+    .secondChild::-webkit-scrollbar-track {
+      width: 8px;
+      height: 100%;
+      background-color: gray;
+    }
+    .secondChild::-webkit-scrollbar-thumb {
+      width: 5px;
+      border-radius: 10px;
+      height: 100px;
+      background-color: white;
+    }
+
+    .parent:focus-within .secondChild {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      overflow-y: scroll;   
+    }
+  </style>
+  <body>
+    <section class="background">
+      <nav>
+        <div><a href="#">Gmail</a></div>
+        <div><a href="#">Images</a></div>
+        <span class="material-symbols-outlined"> science </span>
+        <!-- Apps Dropdown -->
+        <div class="parent">
+          <button class="btttn">
+            <span class="material-symbols-outlined"> apps </span>
+          </button>
+          <div class="secondChild">
+            <div class="content1"></div>
+            <div class="content2"></div>
+            <div class="content3"></div>
+            <div class="content4"></div>
+            <div class="content5"></div>
+            <div class="content6"></div>
+            <div class="content7"></div>
+            <div class="content8"></div>
+            <div class="content9"></div>
+            <div class="content4"></div>
+            <div class="content5"></div>
+            <div class="content6"></div>
+            <div class="content7"></div>
+            <div class="content8"></div>
+            <div class="content9"></div>
+            <div class="content1"></div>
+            <div class="content2"></div>
+            <div class="content3"></div>
+            <div class="content4"></div>
+            <div class="content5"></div>
+          </div>
+        </div>
+        <img
+          width="50px"
+          height="50px"
+          class="img"
+          src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmyimage.557c724f.jpg&w=3840&q=75"
+          alt=""
+        />
+      </nav>
+
+      <!-- <div>
+        <img class="logo" src="https://logos-world.net/wp-content/uploads/2020/09/Google-Logo-2015-present.jpg" alt="">
+      </div> -->
+    </section>
+  </body>
+</html>
